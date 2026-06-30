@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import CulturalExchange from '../views/CulturalExchange.vue'
 import CulturalVisa from '../views/CulturalVisa.vue'
@@ -46,7 +46,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory('/global-youth-exchange/'),
   routes
 })
 
