@@ -1,7 +1,7 @@
 <template>
   <div class="ce-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://source.unsplash.com/1920x1080/?cultural,exchange,diverse,people')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">CULTURAL EXCHANGE</div>
@@ -48,7 +48,7 @@
         <!-- 学术交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?university,students,graduation" alt="Academic Exchange">
+            <img src="https://picsum.photos/id/1074/600/400" alt="Academic Exchange">
           </div>
           <div class="card-content">
             <span class="category-tag">ACADEMIC</span>
@@ -66,7 +66,7 @@
         <!-- 艺术文化交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?art,painting,museum" alt="Art & Culture">
+            <img src="https://picsum.photos/id/96/600/400" alt="Art & Culture">
           </div>
           <div class="card-content">
             <span class="category-tag">ART & CULTURE</span>
@@ -84,7 +84,7 @@
         <!-- 志愿服务 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?volunteer,community,helping" alt="Volunteer Service">
+            <img src="https://picsum.photos/id/325/600/400" alt="Volunteer Service">
           </div>
           <div class="card-content">
             <span class="category-tag">VOLUNTEER</span>
@@ -102,7 +102,7 @@
         <!-- 体育交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?sports,athlete,team" alt="Sports Exchange">
+            <img src="https://picsum.photos/id/1058/600/400" alt="Sports Exchange">
           </div>
           <div class="card-content">
             <span class="category-tag">SPORTS</span>
@@ -120,7 +120,7 @@
         <!-- 职业发展 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?office,meeting,professional" alt="Professional Development">
+            <img src="https://picsum.photos/id/48/600/400" alt="Professional Development">
           </div>
           <div class="card-content">
             <span class="category-tag">CAREER</span>
@@ -138,7 +138,7 @@
         <!-- 文化沉浸体验 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://source.unsplash.com/600x400/?travel,culture,exploring" alt="Cultural Immersion">
+            <img src="https://picsum.photos/id/15/600/400" alt="Cultural Immersion">
           </div>
           <div class="card-content">
             <span class="category-tag">IMMERSION</span>
