@@ -28,9 +28,9 @@
         <div class="footer-section">
           <h4>联系方式</h4>
           <div class="footer-links">
-            <a href="#">北京市朝阳区国际文化交流中心</a>
-            <a href="tel:+861088888888">+86 10 8888 8888</a>
-            <a href="mailto:info@globalyouth.org">info@globalyouth.org</a>
+            <a href="#">澳大利亚悉尼皮特街123号17层</a>
+            <a href="tel:+61282110688">+61 2 8211 0688</a>
+            <a href="mailto:contact@datangcapital.com.au">contact@datangcapital.com.au</a>
           </div>
         </div>
       </div>
