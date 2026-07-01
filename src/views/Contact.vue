@@ -18,7 +18,7 @@
         </div>
 
         <!-- 联系信息 - 简约留白风格 -->
-        <div class="contact-info-grid">
+        <!-- <div class="contact-info-grid">
           <div class="info-block">
             <h4>办公地址</h4>
             <p>北京市朝阳区建国门外大街1号<br>国际文化交流中心大厦A座18层</p>
@@ -35,7 +35,7 @@
             <h4>办公时间</h4>
             <p>周一至周五: 9:00 - 18:00<br>周六: 9:00 - 12:00</p>
           </div>
-        </div>
+        </div> -->
 
         <!-- 快速咨询入口 -->
         <div class="quick-access">
