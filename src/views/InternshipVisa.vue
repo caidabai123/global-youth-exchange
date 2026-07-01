@@ -1,7 +1,7 @@
 <template>
   <div class="iv-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/1040/1920/1080')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?internship,professional,office')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">INTERNSHIP & TRAINING</div>
@@ -19,7 +19,7 @@
     <!-- 澳大利亚 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1015/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?australia,sydney,professional')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">AUSTRALIA</span>
@@ -84,7 +84,7 @@
     <!-- 新西兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1019/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?newzealand,auckland,city')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">NEW ZEALAND</span>
@@ -144,7 +144,7 @@
     <!-- 爱尔兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?ireland,dublin,office')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">IRELAND</span>

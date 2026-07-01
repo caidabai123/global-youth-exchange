@@ -1,7 +1,7 @@
 <template>
   <div class="visa-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=international%20passport%20visa%20documents%20professional%20office&image_size=landscape_16_9')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?passport,visa,international')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">VISA SERVICES</div>
@@ -30,7 +30,7 @@
 
           <div class="visa-content">
             <div class="visa-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=USA%20visa%20interview%20professional%20office%20american%20flag&image_size=landscape_16_9" alt="J-1 Visa">
+              <img src="https://source.unsplash.com/random/1920x1080?usa,washington,government" alt="J-1 Visa">
               <div class="source-links">
                 <h4>官网来源</h4>
                 <a href="https://travel.state.gov/content/travel/en/us-visas/study/exchange.html" target="_blank">美国国务院 Exchange Visitor Visa</a>
@@ -89,7 +89,7 @@
 
           <div class="visa-content">
             <div class="visa-image">
-              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=UK%20London%20professional%20office%20british%20flag%20visa&image_size=landscape_16_9" alt="GAE Visa">
+              <img src="https://source.unsplash.com/random/1920x1080?uk,london,parliament" alt="GAE Visa">
                 <div class="source-links">
                 <h4>官网来源</h4>
                 <a href="https://www.gov.uk/government-authorised-exchange" target="_blank">GOV.UK Government Authorised Exchange</a>

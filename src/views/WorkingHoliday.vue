@@ -1,7 +1,7 @@
 <template>
   <div class="wh-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/10/1920/1080')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?backpacker,travel,young')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">WORKING HOLIDAY</div>
@@ -19,7 +19,7 @@
     <!-- 澳大利亚 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1015/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?australia,landscape,beach')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">AUSTRALIA</span>
@@ -87,7 +87,7 @@
     <!-- 新西兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1019/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?newzealand,landscape,mountain')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">NEW ZEALAND</span>
@@ -149,7 +149,7 @@
     <!-- 加拿大 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1024/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?canada,forest,mountain')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">CANADA</span>
@@ -212,7 +212,7 @@
     <!-- 爱尔兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?ireland,green,countryside')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">IRELAND</span>
