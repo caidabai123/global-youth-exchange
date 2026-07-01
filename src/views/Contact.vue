@@ -1,7 +1,7 @@
 <template>
   <div class="contact-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080?professional,consultation,meeting')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20office%20meeting%20consultation%20modern&image_size=landscape_16_9')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">CONTACT US</div>
