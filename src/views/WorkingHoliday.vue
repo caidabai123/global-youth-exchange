@@ -1,7 +1,7 @@
 <template>
   <div class="wh-page">
     <section class="page-banner">
-      <div class="page-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=working%20holiday%20travel%20backpacker%20world%20adventure&image_size=landscape_16_9')"></div>
+      <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/10/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
         <div class="tagline">WORKING HOLIDAY</div>
@@ -19,7 +19,7 @@
     <!-- 澳大利亚 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Australia%20outback%20beach%20landscape%20travel%20sunset&image_size=landscape_16_9')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1015/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">AUSTRALIA</span>
@@ -87,7 +87,7 @@
     <!-- 新西兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=New%20Zealand%20mountains%20lake%20nature%20travel%20landscape&image_size=landscape_16_9')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1019/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">NEW ZEALAND</span>
@@ -149,7 +149,7 @@
     <!-- 加拿大 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Canada%20forest%20mountains%20nature%20travel%20landscape&image_size=landscape_16_9')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1024/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">CANADA</span>
@@ -212,7 +212,7 @@
     <!-- 爱尔兰 -->
     <section class="country-section">
       <div class="country-banner">
-        <div class="country-banner-bg" style="background-image: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Ireland%20green%20countryside%20castles%20travel%20landscape&image_size=landscape_16_9')"></div>
+        <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
           <span class="country-tag">IRELAND</span>
