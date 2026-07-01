@@ -19,26 +19,26 @@
 
         <div class="contact-info-grid">
           <div class="info-block">
-            <h4>办公地址</h4>
-            <p>北京市朝阳区建国门外大街1号<br>国际文化交流中心大厦A座18层</p>
+            <h4>总部地址</h4>
+            <p>澳大利亚悉尼皮特街123号17层<br>邮编 2000</p>
           </div>
           <div class="info-block">
             <h4>联系电话</h4>
-            <p>+86 10 8888 8888<br>+86 10 8888 8889</p>
+            <p>+61 2 8211 0688</p>
           </div>
           <div class="info-block">
             <h4>电子邮箱</h4>
-            <p>info@globalyouth.org<br>visa@globalyouth.org</p>
+            <p>contact@datangcapital.com.au</p>
           </div>
           <div class="info-block">
-            <h4>办公时间</h4>
-            <p>周一至周五: 9:00 - 18:00<br>周六: 9:00 - 12:00</p>
+            <h4>服务覆盖范围</h4>
+            <p>美国、英国、爱尔兰、澳大利亚<br>新西兰、加拿大、新加坡</p>
           </div>
         </div>
 
         <div class="quick-access">
-          <a href="mailto:info@globalyouth.org" class="access-btn">发送邮件咨询</a>
-          <a href="tel:+861088888888" class="access-btn">电话咨询</a>
+          <a href="mailto:contact@datangcapital.com.au" class="access-btn">发送邮件咨询</a>
+          <a href="tel:+61282110688" class="access-btn">电话咨询</a>
         </div>
 
         <div class="divider"></div>
