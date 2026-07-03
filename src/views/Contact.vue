@@ -4,79 +4,80 @@
       <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/1048/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
-        <div class="tagline">CONTACT US</div>
-        <h2>联系我们</h2>
-        <p>我们随时准备为您解答任何问题</p>
+        <div class="tagline">{{ t('contact.banner.tagline') }}</div>
+        <h2>{{ t('contact.banner.title') }}</h2>
+        <p>{{ t('contact.banner.subtitle') }}</p>
       </div>
+      <div class="banner-curve"></div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">与我们取得联系</h2>
-          <p class="section-desc">无论是项目咨询、签证服务还是合作洽谈，我们都期待与您交流</p>
+          <h2 class="section-title">{{ t('contact.info.title') }}</h2>
+          <p class="section-desc">{{ t('contact.form.title') }}</p>
         </div>
 
         <div class="contact-info-grid">
           <div class="info-block">
-            <h4>总部地址</h4>
-            <p>澳大利亚悉尼皮特街123号17层<br>邮编 2000</p>
+            <h4>{{ t('contact.info.headquarters') }}</h4>
+            <p>{{ t('contact.info.address') }}</p>
           </div>
           <div class="info-block">
-            <h4>联系电话</h4>
+            <h4>{{ t('contact.info.phone') }}</h4>
             <p>+61 2 8211 0688</p>
           </div>
           <div class="info-block">
-            <h4>电子邮箱</h4>
+            <h4>{{ t('contact.info.email') }}</h4>
             <p>contact@datangcapital.com.au</p>
           </div>
           <div class="info-block">
-            <h4>服务覆盖范围</h4>
-            <p>美国、英国、爱尔兰、澳大利亚<br>新西兰、加拿大、新加坡</p>
+            <h4>{{ t('contact.info.coverage') }}</h4>
+            <p>{{ t('contact.info.countries') }}</p>
           </div>
         </div>
 
         <div class="quick-access">
-          <a href="mailto:contact@datangcapital.com.au" class="access-btn">发送邮件咨询</a>
-          <a href="tel:+61282110688" class="access-btn">电话咨询</a>
+          <a href="mailto:contact@datangcapital.com.au" class="access-btn">{{ t('contact.form.submit') }}</a>
+          <a href="tel:+61282110688" class="access-btn">{{ t('contact.info.phone') }}</a>
         </div>
 
         <div class="divider"></div>
 
         <div class="form-section">
-          <h3 class="form-title">在线咨询</h3>
-          <p class="form-desc">填写以下表单，我们将尽快回复您</p>
+          <h3 class="form-title">{{ t('contact.form.title') }}</h3>
+          <p class="form-desc">{{ t('contact.form.title') }}</p>
 
           <form @submit.prevent="handleSubmit" class="contact-form">
             <div class="form-row">
               <div class="form-group">
-                <input type="text" v-model="form.name" placeholder="您的姓名" required>
+                <input type="text" v-model="form.name" :placeholder="t('contact.form.name')" required>
               </div>
               <div class="form-group">
-                <input type="email" v-model="form.email" placeholder="电子邮箱" required>
+                <input type="email" v-model="form.email" :placeholder="t('contact.form.email')" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <input type="tel" v-model="form.phone" placeholder="联系电话" required>
+                <input type="tel" v-model="form.phone" :placeholder="t('contact.form.phone')" required>
               </div>
               <div class="form-group">
                 <select v-model="form.type" required>
-                  <option value="">选择咨询类型</option>
-                  <option value="program">文化交流项目咨询</option>
-                  <option value="visa">签证服务咨询</option>
-                  <option value="working-holiday">打工度假咨询</option>
-                  <option value="internship">实习培训咨询</option>
-                  <option value="cooperation">合作伙伴洽谈</option>
-                  <option value="other">其他问题</option>
+                  <option value="">{{ t('contact.form.subject') }}</option>
+                  <option value="program">{{ t('header.nav.culturalExchange') }}</option>
+                  <option value="visa">{{ t('header.nav.culturalVisa') }}</option>
+                  <option value="working-holiday">{{ t('header.nav.workingHoliday') }}</option>
+                  <option value="internship">{{ t('header.nav.internshipVisa') }}</option>
+                  <option value="cooperation">{{ t('contact.info.countries') }}</option>
+                  <option value="other">{{ t('contact.form.subject') }}</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
-              <textarea v-model="form.message" placeholder="请详细描述您的问题或需求" rows="6" required></textarea>
+              <textarea v-model="form.message" :placeholder="t('contact.form.message')" rows="6" required></textarea>
             </div>
             <div class="form-submit">
-              <button type="submit" class="submit-btn">提交咨询</button>
+              <button type="submit" class="submit-btn">{{ t('contact.form.submit') }}</button>
             </div>
           </form>
         </div>
@@ -86,8 +87,14 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
   name: 'Contact',
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  },
   data() {
     return {
       form: {
@@ -101,14 +108,8 @@ export default {
   },
   methods: {
     handleSubmit() {
-      alert('感谢您的咨询！我们将尽快与您联系。')
-      this.form = {
-        name: '',
-        email: '',
-        phone: '',
-        type: '',
-        message: ''
-      }
+      alert(t('contact.form.submit'))
+      this.form = { name: '', email: '', phone: '', type: '', message: '' }
     }
   }
 }
@@ -116,15 +117,16 @@ export default {
 
 <style scoped>
 .contact-page {
-  padding-top: 80px;
+  padding-top: 88px;
 }
 
 .page-banner {
   position: relative;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .page-banner-bg {
@@ -143,7 +145,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 43, 91, 0.7);
+  background: linear-gradient(135deg, rgba(0, 26, 51, 0.88) 0%, rgba(0, 43, 91, 0.8) 100%);
 }
 
 .page-banner-content {
@@ -154,22 +156,38 @@ export default {
 }
 
 .tagline {
-  font-size: 12px;
-  letter-spacing: 0.3em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  letter-spacing: 8px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  opacity: 0.8;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .page-banner-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .page-banner-content p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.banner-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--bg-white);
+  border-radius: 50% 50% 0 0 / 40px 40px 0 0;
 }
 
 .section {
@@ -188,9 +206,9 @@ export default {
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 2rem;
-  color: var(--primary-blue);
+  color: #4A5568;
   margin-bottom: 15px;
   font-weight: normal;
 }
@@ -214,9 +232,9 @@ export default {
 }
 
 .info-block h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: var(--primary-blue);
+  color: #4A5568;
   margin-bottom: 20px;
   font-weight: normal;
 }
@@ -237,8 +255,8 @@ export default {
 
 .access-btn {
   padding: 14px 35px;
-  border: 1px solid var(--primary-blue);
-  color: var(--primary-blue);
+  border: 1px solid #4A5568;
+  color: #4A5568;
   text-decoration: none;
   font-size: 0.95rem;
   transition: var(--transition-smooth);
@@ -266,9 +284,9 @@ export default {
 }
 
 .form-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 1.6rem;
-  color: var(--primary-blue);
+  color: #4A5568;
   margin-bottom: 10px;
   font-weight: normal;
 }

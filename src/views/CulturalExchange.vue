@@ -4,15 +4,16 @@
       <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
-        <div class="tagline">CULTURAL EXCHANGE</div>
-        <h1>国际文化交流项目</h1>
-        <p>连接世界青年，促进跨文化理解与友谊</p>
+        <div class="tagline">{{ t('culturalExchange.banner.tagline') }}</div>
+        <h1>{{ t('culturalExchange.banner.title') }}</h1>
+        <p>{{ t('culturalExchange.banner.subtitle') }}</p>
       </div>
+      <div class="banner-curve"></div>
     </section>
 
     <section class="intro-section">
       <div class="intro-container">
-        <p>国际文化交流平台成立于2010年，是一家致力于促进全球青年文化交流的非营利性组织。我们提供涵盖学术交流、艺术交流、志愿服务、体育交流、职业发展和文化体验等多个领域的项目，为不同背景和兴趣的青年提供丰富多样的选择。</p>
+        <p>{{ t('culturalExchange.intro.desc') }}</p>
       </div>
     </section>
 
@@ -20,135 +21,129 @@
       <div class="stats-container">
         <div class="stat-item">
           <div class="stat-number">15+</div>
-          <div class="stat-label">年专业经验</div>
+          <div class="stat-label">{{ t('home.stats.years') }}</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">50+</div>
-          <div class="stat-label">合作国家</div>
+          <div class="stat-label">{{ t('home.stats.countries') }}</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">100,000+</div>
-          <div class="stat-label">参与青年</div>
+          <div class="stat-label">{{ t('home.stats.students') }}</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">200+</div>
-          <div class="stat-label">合作机构</div>
+          <div class="stat-label">{{ t('home.stats.partners') }}</div>
         </div>
       </div>
     </section>
 
     <section class="programs-section">
       <div class="section-header">
-        <div class="section-tag">OUR PROGRAMS</div>
-        <h2>文化交流项目</h2>
-        <p>丰富多样的交流项目，为青年搭建通往世界的桥梁</p>
+        <div class="section-tag">{{ t('culturalExchange.programs.sectionTag') }}</div>
+        <h2>{{ t('culturalExchange.programs.title') }}</h2>
+        <p>{{ t('culturalExchange.intro.title') }}</p>
       </div>
 
       <div class="programs-grid">
-        <!-- 学术交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/1074/600/400" alt="Academic Exchange">
+            <img src="https://picsum.photos/id/1074/600/400" :alt="t('culturalExchange.programs.studentExchange.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">ACADEMIC</span>
-            <h3>学术交流项目</h3>
-            <p>与全球顶尖学府合作，提供短期游学、学期交换、学术研讨会等机会，拓宽国际视野，提升学术能力。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.studentExchange.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.studentExchange.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.studentExchange.desc') }}</p>
             <ul class="card-features">
-              <li>名校短期课程</li>
-              <li>学分互认项目</li>
-              <li>学术研究交流</li>
-              <li>国际会议参与</li>
+              <li>{{ t('culturalExchange.programs.studentExchange.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.studentExchange.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.studentExchange.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.studentExchange.feature4') }}</li>
             </ul>
           </div>
         </div>
 
-        <!-- 艺术文化交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/96/600/400" alt="Art & Culture">
+            <img src="https://picsum.photos/id/96/600/400" :alt="t('culturalExchange.programs.culturalImmersion.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">ART & CULTURE</span>
-            <h3>艺术文化交流</h3>
-            <p>涵盖音乐、舞蹈、戏剧、视觉艺术等领域，通过演出、展览、工作坊等形式促进艺术创作与文化传播。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.culturalImmersion.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.artExchange.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.artExchange.desc') }}</p>
             <ul class="card-features">
-              <li>国际艺术节</li>
-              <li>艺术家驻留</li>
-              <li>文化遗产保护</li>
-              <li>艺术教育交流</li>
+              <li>{{ t('culturalExchange.programs.artExchange.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.artExchange.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.artExchange.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.artExchange.feature4') }}</li>
             </ul>
           </div>
         </div>
 
-        <!-- 志愿服务 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/325/600/400" alt="Volunteer Service">
+            <img src="https://picsum.photos/id/1058/600/400" :alt="t('culturalExchange.programs.volunteer.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">VOLUNTEER</span>
-            <h3>国际志愿服务</h3>
-            <p>参与社区发展、环境保护、教育支持等公益项目，用行动传递爱心，在服务中成长与收获。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.volunteer.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.volunteer.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.volunteer.desc') }}</p>
             <ul class="card-features">
-              <li>社区建设项目</li>
-              <li>环保公益活动</li>
-              <li>教育支援计划</li>
-              <li>灾后重建服务</li>
+              <li>{{ t('culturalExchange.programs.volunteer.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.volunteer.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.volunteer.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.volunteer.feature4') }}</li>
             </ul>
           </div>
         </div>
 
-        <!-- 体育交流 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/1058/600/400" alt="Sports Exchange">
+            <img src="https://picsum.photos/id/1050/600/400" :alt="t('culturalExchange.programs.youthForum.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">SPORTS</span>
-            <h3>体育交流项目</h3>
-            <p>通过友谊赛、训练营、体育文化节等形式，促进各国青年在体育领域的交流与合作，弘扬体育精神。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.youthForum.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.youthForum.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.youthForum.desc') }}</p>
             <ul class="card-features">
-              <li>国际友谊赛事</li>
-              <li>专业训练营</li>
-              <li>体育文化节</li>
-              <li>运动康复交流</li>
+              <li>{{ t('culturalExchange.programs.youthForum.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.youthForum.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.youthForum.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.youthForum.feature4') }}</li>
             </ul>
           </div>
         </div>
 
-        <!-- 职业发展 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/48/600/400" alt="Professional Development">
+            <img src="https://picsum.photos/id/1077/600/400" :alt="t('culturalExchange.programs.summerCamp.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">CAREER</span>
-            <h3>职业发展项目</h3>
-            <p>为青年提供海外实习、行业培训、职业导师等机会，提升职业技能，拓展国际人脉，助力职业发展。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.summerCamp.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.summerCamp.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.summerCamp.desc') }}</p>
             <ul class="card-features">
-              <li>海外实习计划</li>
-              <li>行业技能培训</li>
-              <li>职业导师配对</li>
-              <li>创业孵化项目</li>
+              <li>{{ t('culturalExchange.programs.summerCamp.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.summerCamp.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.summerCamp.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.summerCamp.feature4') }}</li>
             </ul>
           </div>
         </div>
 
-        <!-- 文化沉浸体验 -->
         <div class="program-card">
           <div class="card-image">
-            <img src="https://picsum.photos/id/15/600/400" alt="Cultural Immersion">
+            <img src="https://picsum.photos/id/1039/600/400" :alt="t('culturalExchange.programs.artExchange.tag')">
           </div>
           <div class="card-content">
-            <span class="category-tag">IMMERSION</span>
-            <h3>文化沉浸体验</h3>
-            <p>通过寄宿家庭、文化探访、语言学习等方式深度融入当地文化，体验不同生活方式，培养跨文化能力。</p>
+            <span class="category-tag">{{ t('culturalExchange.programs.artExchange.tag') }}</span>
+            <h3>{{ t('culturalExchange.programs.culturalImmersion.title') }}</h3>
+            <p>{{ t('culturalExchange.programs.culturalImmersion.desc') }}</p>
             <ul class="card-features">
-              <li>寄宿家庭体验</li>
-              <li>语言学习课程</li>
-              <li>文化探访之旅</li>
-              <li>传统技艺学习</li>
+              <li>{{ t('culturalExchange.programs.culturalImmersion.feature1') }}</li>
+              <li>{{ t('culturalExchange.programs.culturalImmersion.feature2') }}</li>
+              <li>{{ t('culturalExchange.programs.culturalImmersion.feature3') }}</li>
+              <li>{{ t('culturalExchange.programs.culturalImmersion.feature4') }}</li>
             </ul>
           </div>
         </div>
@@ -157,85 +152,69 @@
 
     <section class="features-section">
       <div class="section-header">
-        <div class="section-tag">WHY CHOOSE US</div>
-        <h2>为什么选择我们</h2>
+        <div class="section-tag">{{ t('culturalExchange.whyChooseUs.sectionTag') }}</div>
+        <h2>{{ t('header.nav.about') }}</h2>
       </div>
 
       <div class="features-grid">
         <div class="feature-item">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-              <path d="M2 17l10 5 10-5"></path>
-              <path d="M2 12l10 5 10-5"></path>
-            </svg>
-          </div>
-          <h3>专业可靠</h3>
-          <p>15年专业经验，完善的项目管理体系，确保每一次交流安全可靠</p>
+          <div class="feature-number">01</div>
+          <h3>{{ t('culturalExchange.features.professional.title') }}</h3>
+          <p>{{ t('culturalExchange.features.professional.desc') }}</p>
         </div>
         <div class="feature-item">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M18 20V10"></path>
-              <path d="M12 20V4"></path>
-              <path d="M6 20v-6"></path>
-            </svg>
-          </div>
-          <h3>全球网络</h3>
-          <p>覆盖50+国家和地区的合作网络，为您打开通往世界的大门</p>
+          <div class="feature-number">02</div>
+          <h3>{{ t('culturalExchange.features.global.title') }}</h3>
+          <p>{{ t('culturalExchange.features.global.desc') }}</p>
         </div>
         <div class="feature-item">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <h3>个性化服务</h3>
-          <p>根据您的需求和背景，量身定制最适合的交流方案</p>
+          <div class="feature-number">03</div>
+          <h3>{{ t('culturalExchange.features.personalized.title') }}</h3>
+          <p>{{ t('culturalExchange.features.personalized.desc') }}</p>
         </div>
         <div class="feature-item">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-          </div>
-          <h3>持续支持</h3>
-          <p>从申请到归国，全程提供专业指导和贴心服务</p>
+          <div class="feature-number">04</div>
+          <h3>{{ t('culturalExchange.features.support.title') }}</h3>
+          <p>{{ t('culturalExchange.features.support.desc') }}</p>
         </div>
       </div>
     </section>
 
     <section class="partners-section">
       <div class="section-header">
-        <div class="section-tag">PARTNERS</div>
-        <h2>合作伙伴</h2>
-        <p>与全球知名机构建立长期合作关系</p>
+        <div class="section-tag">{{ t('culturalExchange.partners.sectionTag') }}</div>
+        <h2>{{ t('footer.programs') }}</h2>
+        <p>{{ t('culturalExchange.intro.title') }}</p>
       </div>
 
       <div class="partners-grid">
-        <div class="partner-item">联合国教科文组织</div>
-        <div class="partner-item">世界青年联盟</div>
-        <div class="partner-item">国际学生组织</div>
-        <div class="partner-item">各国大使馆</div>
-        <div class="partner-item">知名高校</div>
-        <div class="partner-item">跨国企业</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.unesco') }}</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.worldYouthAlliance') }}</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.internationalStudentOrg') }}</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.embassies') }}</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.topUniversities') }}</div>
+        <div class="partner-item">{{ t('culturalExchange.partners.multinationalCompanies') }}</div>
       </div>
     </section>
 
     <section class="footer-section">
       <div class="footer-container">
-        <p>国际文化交流平台始终致力于促进全球青年之间的相互理解与友谊，通过丰富多彩的交流项目，帮助青年拓展视野、增长见识、建立国际人脉。</p>
-        <p>欢迎加入我们，开启您的国际文化交流之旅！</p>
+        <p>{{ t('culturalExchange.intro.desc') }}</p>
+        <p>{{ t('home.hero.explore') }}</p>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
-  name: 'CulturalExchange'
+  name: 'CulturalExchange',
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
 }
 </script>
 
@@ -250,6 +229,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .page-banner-bg {
@@ -287,9 +267,10 @@ export default {
 }
 
 .page-banner-content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 2.8rem;
   margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .page-banner-content p {
@@ -297,9 +278,19 @@ export default {
   opacity: 0.9;
 }
 
+.banner-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--bg-white);
+  border-radius: 50% 50% 0 0 / 40px 40px 0 0;
+}
+
 .intro-section {
-  padding: 60px 0;
-  background: var(--bg-warm);
+  padding: 140px 0 80px;
+  background: #FFFFFF;
 }
 
 .intro-container {
@@ -311,21 +302,47 @@ export default {
 
 .intro-container p {
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: #718096;
   line-height: 1.8;
 }
 
 .stats-section {
-  padding: 80px 40px;
-  background: var(--primary-blue);
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #002B5B 0%, #003366 50%, #002B5B 100%);
+  position: relative;
+  margin: 40px 0;
 }
 
-.stats-container {
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: var(--bg-white);
+  border-radius: 0 0 50% 50% / 0 0 25px 25px;
+}
+
+.stats-section::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: var(--bg-white);
+  border-radius: 50% 50% 0 0 / 25px 25px 0 0;
+}
+
+.stats-section .stats-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .stat-item {
@@ -334,73 +351,81 @@ export default {
 }
 
 .stat-number {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 8px;
+  font-weight: 600;
+  color: #C9A227;
+  margin-bottom: 10px;
 }
 
 .stat-label {
   font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: 0.8;
 }
 
 .programs-section {
-  padding: 80px 40px;
+  padding: 140px 0 120px;
+  background: #FFFFFF;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-.section-tag {
-  font-size: 10px;
-  letter-spacing: 0.3em;
+.section-header .section-tag {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.8rem;
+  color: #C9A227;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--accent-gold);
+  margin-bottom: 16px;
   font-weight: 600;
-  margin-bottom: 15px;
-  display: block;
 }
 
 .section-header h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: var(--text-primary);
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #4A5568;
 }
 
 .section-header p {
-  font-size: 1rem;
-  color: var(--text-secondary);
+  color: #718096;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
 }
 
 .programs-grid {
-  max-width: 1400px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
 .program-card {
-  background: white;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .program-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
-  height: 220px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -408,39 +433,39 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: var(--transition-smooth);
+  transition: transform 0.6s ease;
 }
 
 .program-card:hover .card-image img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .card-content {
-  padding: 30px;
+  padding: 28px;
 }
 
 .category-tag {
-  font-size: 9px;
-  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accent-gold);
+  color: #C9A227;
   font-weight: 600;
-  display: block;
   margin-bottom: 12px;
 }
 
 .card-content h3 {
-  font-size: 1.3rem;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #4A5568;
   margin-bottom: 12px;
 }
 
 .card-content p {
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: #718096;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .card-features {
@@ -450,125 +475,129 @@ export default {
 }
 
 .card-features li {
-  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #888888;
+  padding: 6px 0;
   padding-left: 20px;
   position: relative;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--border-light);
-}
-
-.card-features li:last-child {
-  border-bottom: none;
 }
 
 .card-features li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  background: var(--accent-gold);
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  background: #C9A227;
   border-radius: 50%;
 }
 
 .features-section {
-  padding: 80px 40px;
-  background: var(--bg-warm);
+  padding: 120px 0;
+  background: #FAFAFA;
 }
 
 .features-grid {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
 .feature-item {
   text-align: center;
+  padding: 32px;
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-gold);
-}
-
-.feature-icon svg {
-  width: 36px;
-  height: 36px;
+.feature-number {
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgba(201, 162, 39, 0.1);
+  margin-bottom: 16px;
 }
 
 .feature-item h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 10px;
+  color: #4A5568;
+  margin-bottom: 12px;
 }
 
 .feature-item p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #718096;
+  line-height: 1.7;
 }
 
 .partners-section {
-  padding: 80px 40px;
+  padding: 120px 0;
+  background: #FFFFFF;
 }
 
 .partners-grid {
-  max-width: 1000px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  text-align: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 48px;
 }
 
 .partner-item {
-  padding: 20px;
-  background: var(--bg-warm);
+  text-align: center;
+  padding: 24px;
+  background: #FAFAFA;
   border-radius: 8px;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+  font-size: 1rem;
+  color: #718096;
+  font-weight: 500;
 }
 
 .footer-section {
-  padding: 80px 40px;
-  background: var(--primary-blue);
+  padding: 80px 0;
+  background: linear-gradient(135deg, #002B5B 0%, #003366 100%);
   text-align: center;
+  position: relative;
+}
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: white;
+  border-radius: 0 0 50% 50% / 0 0 50px 50px;
 }
 
 .footer-container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 60px 48px 0;
 }
 
 .footer-container p {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.8;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .footer-container p:last-child {
-  margin-bottom: 0;
-  font-weight: 600;
-  color: white;
+  color: #C9A227;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {
   .programs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -576,66 +605,66 @@ export default {
 
 @media (max-width: 768px) {
   .page-banner-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-
+  
+  .banner-curve {
+    height: 70px;
+    border-radius: 50% 50% 0 0 / 70px 70px 0 0;
+  }
+  
   .intro-section {
-    padding: 40px 0;
+    padding: 100px 0 60px;
   }
-
-  .intro-container {
-    padding: 0 24px;
-  }
-
+  
   .stats-section {
-    padding: 50px 24px;
+    padding: 80px 20px;
   }
-
-  .stats-container {
-    flex-wrap: wrap;
-    gap: 40px;
+  
+  .stats-section::before,
+  .stats-section::after {
+    height: 35px;
+    border-radius: 50% 50% 0 0 / 35px 35px 0 0;
   }
-
+  
+  .stats-section::before {
+    top: -35px;
+  }
+  
+  .stats-section::after {
+    bottom: -35px;
+  }
+  
+  .stats-section .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .stat-number {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-
+  
   .programs-section {
-    padding: 50px 24px;
+    padding: 100px 0 80px;
   }
-
+  
   .programs-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
-
-  .section-header {
-    margin-bottom: 40px;
-  }
-
-  .section-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .features-section {
-    padding: 50px 24px;
-  }
-
+  
   .features-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
-
-  .partners-section {
-    padding: 50px 24px;
-  }
-
+  
   .partners-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .footer-section {
-    padding: 50px 24px;
+  
+  .footer-section::before {
+    height: 35px;
+  }
+  
+  .footer-container {
+    padding: 40px 24px 0;
   }
 }
 </style>

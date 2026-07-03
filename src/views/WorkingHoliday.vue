@@ -4,77 +4,60 @@
       <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/10/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
-        <div class="tagline">WORKING HOLIDAY</div>
-        <h1>打工度假签证</h1>
-        <p>为年轻旅行者设计的短期工作与旅行方案</p>
+        <div class="tagline">{{ t('workingHoliday.banner.tagline') }}</div>
+        <h1>{{ t('workingHoliday.banner.title') }}</h1>
+        <p>{{ t('workingHoliday.banner.subtitle') }}</p>
       </div>
+      <div class="banner-curve"></div>
     </section>
 
     <section class="intro-section">
       <div class="intro-container">
-        <p>打工度假签证为青年旅行者提供在海外合法工作的机会，通过短期工作覆盖旅行费用，同时体验不同国家的文化与生活方式。以下为四个热门目的地的详细信息。</p>
+        <p>{{ t('workingHoliday.intro.desc') }}</p>
       </div>
     </section>
 
-    <!-- 澳大利亚 -->
+    <!-- Australia -->
     <section class="country-section">
       <div class="country-banner">
         <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1015/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
-          <span class="country-tag">AUSTRALIA</span>
-          <h2>Subclass 417 / 462</h2>
-          <p>打工度假签证</p>
+          <span class="country-tag">{{ t('workingHoliday.australia.country') }}</span>
+          <h2>{{ t('workingHoliday.australia.subtitle') }}</h2>
+          <p>{{ t('workingHoliday.australia.title') }}</p>
         </div>
       </div>
       
       <div class="country-detail">
         <div class="detail-row">
-          <span class="detail-label">定位</span>
-          <p>为符合条件的青年旅行者提供在澳大利亚工作和旅行的机会，最长可达1年。部分条件满足者可申请二签或三签延长停留。</p>
+          <span class="detail-label">{{ t('workingHoliday.australia.duration') }}</span>
+          <p>{{ t('workingHoliday.australia.desc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">适用人群</span>
-          <ul>
-            <li>年满18-31周岁的青年旅行者</li>
-            <li>中国大陆公民适用 Subclass 462 类别</li>
-            <li>持有有效护照，有足够资金支持初期在澳生活</li>
-            <li>具备基础英语能力，满足健康与品行要求</li>
-          </ul>
+          <span class="detail-label">{{ t('workingHoliday.australia.requirements') }}</span>
+          <p>{{ t('workingHoliday.australia.requirementsDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">核心条件</span>
-          <ul>
-            <li>需持有有效的旅行医疗保险</li>
-            <li>满足指定国家的学历要求（通常为高等教育学历）</li>
-            <li>首次申请需在境外递交</li>
-            <li>有真实的旅行意图，完成签证后离境</li>
-          </ul>
+          <span class="detail-label">{{ t('workingHoliday.australia.work') }}</span>
+          <p>{{ t('workingHoliday.australia.workDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">工作权限</span>
-          <ul>
-            <li>可在任意雇主处工作，但同一雇主工作不超过6个月</li>
-            <li>可在任意学校学习，但课程不超过4个月</li>
-            <li>季节性工作可申请二签或三签延长停留</li>
-          </ul>
+          <span class="detail-label">{{ t('workingHoliday.australia.age') }}</span>
+          <p>{{ t('workingHoliday.australia.ageDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">费用与时长</span>
-          <ul>
-            <li>申请费约 AUD 495 · 最长获批 12 个月</li>
-            <li>二签需在指定地区从事特定工作满88天</li>
-            <li>三签需在指定地区从事特定工作满179天</li>
-          </ul>
+          <span class="detail-label">{{ t('workingHoliday.australia.fees') }}</span>
+          <p>{{ t('workingHoliday.australia.durationDesc') }}</p>
         </div>
 
         <div class="detail-row tip">
-          <span class="detail-label">业务提示</span>
-          <p>本签证为度假类签证，旨在促进文化交流与青年旅行体验。工作仅作为覆盖旅行费用的手段，不应作为主要目的。</p>
+          <span class="detail-label">{{ t('workingHoliday.australia.note') }}</span>
+          <p>{{ t('workingHoliday.australia.noteDesc') }}</p>
         </div>
 
         <div class="source-links">
@@ -84,122 +67,122 @@
       </div>
     </section>
 
-    <!-- 新西兰 -->
+    <!-- New Zealand -->
     <section class="country-section">
       <div class="country-banner">
         <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1019/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
-          <span class="country-tag">NEW ZEALAND</span>
-          <h2>Working Holiday Visa</h2>
-          <p>打工度假签证</p>
+          <span class="country-tag">{{ t('workingHoliday.newZealand.country') }}</span>
+          <h2>{{ t('workingHoliday.newZealand.subtitle') }}</h2>
+          <p>{{ t('workingHoliday.newZealand.title') }}</p>
         </div>
       </div>
       
       <div class="country-detail">
         <div class="detail-row">
-          <span class="detail-label">定位</span>
-          <p>允许18-30岁的青年在新西兰工作和旅行，最长可达12个月。完成特定条件可申请第二次签证延长停留。</p>
+          <span class="detail-label">{{ t('workingHoliday.newZealand.purpose') }}</span>
+          <p>{{ t('workingHoliday.newZealand.purposeDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">适用人群</span>
+          <span class="detail-label">{{ t('workingHoliday.newZealand.eligible') }}</span>
           <ul>
-            <li>年满18-30周岁的青年旅行者</li>
-            <li>持有有效护照，有充足资金证明</li>
-            <li>满足健康与品行要求</li>
-            <li>中国大陆公民需通过年度配额抽签获得申请资格</li>
+            <li>{{ t('workingHoliday.newZealand.eligible1') }}</li>
+            <li>{{ t('workingHoliday.newZealand.eligible2') }}</li>
+            <li>{{ t('workingHoliday.newZealand.eligible3') }}</li>
+            <li>{{ t('workingHoliday.newZealand.eligible4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">核心条件</span>
+          <span class="detail-label">{{ t('workingHoliday.newZealand.requirements') }}</span>
           <ul>
-            <li>需提供约 NZD 4,200 的资金证明</li>
-            <li>持有往返机票或足够资金购买返程机票</li>
-            <li>满足学历要求（通常为大专及以上学历）</li>
-            <li>具备基础英语沟通能力</li>
+            <li>{{ t('workingHoliday.newZealand.req1') }}</li>
+            <li>{{ t('workingHoliday.newZealand.req2') }}</li>
+            <li>{{ t('workingHoliday.newZealand.req3') }}</li>
+            <li>{{ t('workingHoliday.newZealand.req4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">工作权限</span>
+          <span class="detail-label">{{ t('workingHoliday.newZealand.workRights') }}</span>
           <ul>
-            <li>可在任意雇主处工作，同一雇主不超过3个月</li>
-            <li>季节性工作（农业、园艺、渔业）可申请二签</li>
-            <li>可学习短期课程，但不超过3个月</li>
+            <li>{{ t('workingHoliday.newZealand.work1') }}</li>
+            <li>{{ t('workingHoliday.newZealand.work2') }}</li>
+            <li>{{ t('workingHoliday.newZealand.work3') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">费用与时长</span>
+          <span class="detail-label">{{ t('workingHoliday.newZealand.fees') }}</span>
           <ul>
-            <li>申请费约 NZD 280 · 最长获批 12 个月</li>
-            <li>二签需完成季节性工作满3个月</li>
-            <li>审理周期约10-20个工作日</li>
+            <li>{{ t('workingHoliday.newZealand.fee1') }}</li>
+            <li>{{ t('workingHoliday.newZealand.fee2') }}</li>
+            <li>{{ t('workingHoliday.newZealand.fee3') }}</li>
           </ul>
         </div>
 
         <div class="source-links">
-          <a href="https://www.immigration.govt.nz/visas/working-holiday-visa/" target="_blank">Working Holiday Visa</a>
+          <a href="https://www.immigration.govt.nz/visas/working-holiday-visa/" target="_blank">{{ t('workingHoliday.newZealand.officialLink') }}</a>
         </div>
       </div>
     </section>
 
-    <!-- 加拿大 -->
+    <!-- Canada -->
     <section class="country-section">
       <div class="country-banner">
         <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1024/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
-          <span class="country-tag">CANADA</span>
-          <h2>IEC Working Holiday</h2>
-          <p>国际体验加拿大 - 打工度假</p>
+          <span class="country-tag">{{ t('workingHoliday.canada.country') }}</span>
+          <h2>{{ t('workingHoliday.canada.subtitle') }}</h2>
+          <p>{{ t('workingHoliday.canada.title') }}</p>
         </div>
       </div>
       
       <div class="country-detail">
         <div class="detail-row">
-          <span class="detail-label">定位</span>
-          <p>通过国际体验加拿大计划，为青年提供在加拿大工作和旅行的机会，最长可达24个月。分为打工度假、青年专业人员和国际合作实习三个类别。</p>
+          <span class="detail-label">{{ t('workingHoliday.canada.purpose') }}</span>
+          <p>{{ t('workingHoliday.canada.purposeDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">适用人群</span>
+          <span class="detail-label">{{ t('workingHoliday.canada.eligible') }}</span>
           <ul>
-            <li>年满18-35周岁的青年旅行者</li>
-            <li>持有有效护照，有足够资金支持初期生活</li>
-            <li>满足健康与品行要求</li>
-            <li>中国大陆公民需通过年度配额抽签获得申请资格</li>
+            <li>{{ t('workingHoliday.canada.eligible1') }}</li>
+            <li>{{ t('workingHoliday.canada.eligible2') }}</li>
+            <li>{{ t('workingHoliday.canada.eligible3') }}</li>
+            <li>{{ t('workingHoliday.canada.eligible4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">核心条件</span>
+          <span class="detail-label">{{ t('workingHoliday.canada.requirements') }}</span>
           <ul>
-            <li>需提供约 CAD 2,500 的资金证明</li>
-            <li>持有返程机票或足够资金购买返程机票</li>
-            <li>满足指定的学历或工作经验要求</li>
-            <li>具备基础英语或法语能力</li>
+            <li>{{ t('workingHoliday.canada.req1') }}</li>
+            <li>{{ t('workingHoliday.canada.req2') }}</li>
+            <li>{{ t('workingHoliday.canada.req3') }}</li>
+            <li>{{ t('workingHoliday.canada.req4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">工作权限</span>
+          <span class="detail-label">{{ t('workingHoliday.canada.workRights') }}</span>
           <ul>
-            <li>可在加拿大境内任何雇主处工作</li>
-            <li>可从事季节性、临时性或兼职工作</li>
-            <li>部分类别允许专业对口工作</li>
-            <li>可申请延长停留至24个月</li>
+            <li>{{ t('workingHoliday.canada.work1') }}</li>
+            <li>{{ t('workingHoliday.canada.work2') }}</li>
+            <li>{{ t('workingHoliday.canada.work3') }}</li>
+            <li>{{ t('workingHoliday.canada.work4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">费用与时长</span>
+          <span class="detail-label">{{ t('workingHoliday.canada.fees') }}</span>
           <ul>
-            <li>申请费约 CAD 150 · 最长获批 24 个月</li>
-            <li>需支付开放式工签费用 CAD 255</li>
-            <li>审理周期约4-8周</li>
+            <li>{{ t('workingHoliday.canada.fee1') }}</li>
+            <li>{{ t('workingHoliday.canada.fee2') }}</li>
+            <li>{{ t('workingHoliday.canada.fee3') }}</li>
           </ul>
         </div>
 
@@ -209,68 +192,68 @@
       </div>
     </section>
 
-    <!-- 爱尔兰 -->
+    <!-- Ireland -->
     <section class="country-section">
       <div class="country-banner">
         <div class="country-banner-bg" style="background-image: url('https://picsum.photos/id/1035/1920/1080')"></div>
         <div class="country-banner-overlay"></div>
         <div class="country-banner-content">
-          <span class="country-tag">IRELAND</span>
-          <h2>Working Holiday Authorisation</h2>
-          <p>打工度假许可</p>
+          <span class="country-tag">{{ t('workingHoliday.ireland.country') }}</span>
+          <h2>{{ t('workingHoliday.ireland.subtitle') }}</h2>
+          <p>{{ t('workingHoliday.ireland.title') }}</p>
         </div>
       </div>
       
       <div class="country-detail">
         <div class="detail-row">
-          <span class="detail-label">定位</span>
-          <p>为非欧洲经济区青年提供在爱尔兰工作和旅行的机会，最长可达1年。允许在爱尔兰从事短期工作以支持旅行支出。</p>
+          <span class="detail-label">{{ t('workingHoliday.ireland.purpose') }}</span>
+          <p>{{ t('workingHoliday.ireland.purposeDesc') }}</p>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">适用人群</span>
+          <span class="detail-label">{{ t('workingHoliday.ireland.eligible') }}</span>
           <ul>
-            <li>年满18-30周岁的青年旅行者</li>
-            <li>持有有效护照，有足够资金支持初期生活</li>
-            <li>满足健康与品行要求</li>
-            <li>需在爱尔兰境外申请</li>
+            <li>{{ t('workingHoliday.ireland.eligible1') }}</li>
+            <li>{{ t('workingHoliday.ireland.eligible2') }}</li>
+            <li>{{ t('workingHoliday.ireland.eligible3') }}</li>
+            <li>{{ t('workingHoliday.ireland.eligible4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">核心条件</span>
+          <span class="detail-label">{{ t('workingHoliday.ireland.requirements') }}</span>
           <ul>
-            <li>需提供约 EUR 3,000 的资金证明</li>
-            <li>持有往返机票或足够资金购买返程机票</li>
-            <li>持有有效的旅行医疗保险</li>
-            <li>有真实的旅行意图</li>
+            <li>{{ t('workingHoliday.ireland.req1') }}</li>
+            <li>{{ t('workingHoliday.ireland.req2') }}</li>
+            <li>{{ t('workingHoliday.ireland.req3') }}</li>
+            <li>{{ t('workingHoliday.ireland.req4') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">工作权限</span>
+          <span class="detail-label">{{ t('workingHoliday.ireland.workRights') }}</span>
           <ul>
-            <li>可在爱尔兰境内工作，但同一雇主不超过6个月</li>
-            <li>可从事季节性、临时性工作</li>
-            <li>可学习短期课程，但不超过3个月</li>
+            <li>{{ t('workingHoliday.ireland.work1') }}</li>
+            <li>{{ t('workingHoliday.ireland.work2') }}</li>
+            <li>{{ t('workingHoliday.ireland.work3') }}</li>
           </ul>
         </div>
 
         <div class="detail-row">
-          <span class="detail-label">费用与时长</span>
+          <span class="detail-label">{{ t('workingHoliday.ireland.fees') }}</span>
           <ul>
-            <li>申请费约 EUR 150 · 最长获批 12 个月</li>
-            <li>如需入境签证，另需支付签证费</li>
-            <li>审理周期约4-6周</li>
+            <li>{{ t('workingHoliday.ireland.fee1') }}</li>
+            <li>{{ t('workingHoliday.ireland.fee2') }}</li>
+            <li>{{ t('workingHoliday.ireland.fee3') }}</li>
           </ul>
         </div>
 
         <div class="detail-row tip">
-          <span class="detail-label">重要说明</span>
+          <span class="detail-label">{{ t('workingHoliday.ireland.note') }}</span>
           <ul>
-            <li>申请须在爱尔兰境外提交</li>
-            <li>入境后需到移民局登记获得IRP卡</li>
-            <li>不可作为长期工作或移民通道</li>
+            <li>{{ t('workingHoliday.ireland.note1') }}</li>
+            <li>{{ t('workingHoliday.ireland.note2') }}</li>
+            <li>{{ t('workingHoliday.ireland.note3') }}</li>
           </ul>
         </div>
 
@@ -282,29 +265,36 @@
 
     <section class="footer-section">
       <div class="footer-container">
-        <p class="important-tip">以上信息仅供参考。具体申请条件、费用及审理周期均以各目的地国家移民主管部门官方网站实时公布为准。建议在正式递交申请前仔细阅读官方指南，并视个人情况咨询专业移民法律意见。</p>
+        <p class="important-tip">{{ t('workingHoliday.footer.tip') }}</p>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
-  name: 'WorkingHoliday'
+  name: 'WorkingHoliday',
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
 }
 </script>
 
 <style scoped>
 .wh-page {
-  padding-top: 80px;
+  padding-top: 88px;
 }
 
 .page-banner {
   position: relative;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .page-banner-bg {
@@ -323,7 +313,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 43, 91, 0.7);
+  background: linear-gradient(135deg, rgba(0, 26, 51, 0.88) 0%, rgba(0, 43, 91, 0.8) 100%);
 }
 
 .page-banner-content {
@@ -334,22 +324,38 @@ export default {
 }
 
 .tagline {
-  font-size: 12px;
-  letter-spacing: 0.3em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  letter-spacing: 8px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  opacity: 0.8;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .page-banner-content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .page-banner-content p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.banner-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--bg-white);
+  border-radius: 50% 50% 0 0 / 40px 40px 0 0;
 }
 
 .intro-section {
@@ -417,7 +423,7 @@ export default {
 }
 
 .country-banner-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 5px;
 }

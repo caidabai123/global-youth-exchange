@@ -7,42 +7,48 @@
             <router-link to="/">
               <div class="logo-icon">G</div>
               <div class="logo-text">
-                <h1>国际青年文化交流</h1>
-                <span>GLOBAL YOUTH EXCHANGE</span>
+                <h1>{{ t('footer.logoText') }}</h1>
+                <span>{{ t('footer.slogan') }}</span>
               </div>
             </router-link>
           </div>
-          <p>致力于促进国际青年文化交流，搭建跨文化沟通桥梁，为全球青年提供专业、可靠的交流服务。</p>
+          <p>{{ t('footer.description') }}</p>
         </div>
         <div class="footer-section">
-          <h4>快速链接</h4>
+          <h4>{{ t('footer.quickLinks') }}</h4>
           <div class="footer-links">
-            <router-link to="/cultural-exchange">国际文化交流项目</router-link>
-            <router-link to="/cultural-visa">国际青年文化交流签证</router-link>
-            <router-link to="/working-holiday">打工度假签证</router-link>
-            <router-link to="/internship-visa">国际青年实习培训签证</router-link>
-            <router-link to="/about">关于我们</router-link>
-            <router-link to="/contact">联系我们</router-link>
+            <router-link to="/cultural-exchange">{{ t('header.nav.culturalExchange') }}</router-link>
+            <router-link to="/cultural-visa">{{ t('header.nav.culturalVisa') }}</router-link>
+            <router-link to="/working-holiday">{{ t('header.nav.workingHoliday') }}</router-link>
+            <router-link to="/internship-visa">{{ t('header.nav.internshipVisa') }}</router-link>
+            <router-link to="/about">{{ t('header.nav.about') }}</router-link>
+            <router-link to="/contact">{{ t('header.nav.contact') }}</router-link>
           </div>
         </div>
         <div class="footer-section">
-          <h4>联系方式</h4>
+          <h4>{{ t('footer.contact') }}</h4>
           <div class="footer-links">
-            <a href="#">澳大利亚悉尼皮特街123号17层</a>
+            <a href="#">{{ t('contact.info.address') }}</a>
             <a href="tel:+61282110688">+61 2 8211 0688</a>
             <a href="mailto:contact@datangcapital.com.au">contact@datangcapital.com.au</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Global Youth Cultural Exchange. All rights reserved.</p>
+        <p>{{ t('footer.copyright') }}</p>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
 }
 </script>

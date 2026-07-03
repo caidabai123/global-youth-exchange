@@ -5,8 +5,8 @@
         <router-link to="/" class="logo">
           <div class="logo-icon">G</div>
           <div class="logo-text">
-            <h1>国际青年文化交流</h1>
-            <span>GLOBAL YOUTH EXCHANGE</span>
+            <h1>{{ t('header.logo') }}</h1>
+            <span>{{ t('header.slogan') }}</span>
           </div>
         </router-link>
         <div class="nav-toggle" id="navToggle" @click="toggleNav">
@@ -15,22 +15,37 @@
           <span></span>
         </div>
         <ul class="nav-links" id="navLinks" :class="{ active: isNavOpen }">
-          <li><router-link to="/" @click="closeNav">首页</router-link></li>
-          <li><router-link to="/cultural-exchange" @click="closeNav">国际文化交流项目</router-link></li>
-          <li><router-link to="/cultural-visa" @click="closeNav">国际青年文化交流签证</router-link></li>
-          <li><router-link to="/working-holiday" @click="closeNav">打工度假签证</router-link></li>
-          <li><router-link to="/internship-visa" @click="closeNav">国际青年实习培训签证</router-link></li>
-          <li><router-link to="/about" @click="closeNav">关于我们</router-link></li>
-          <li><router-link to="/contact" @click="closeNav">联系我们</router-link></li>
+          <li><router-link to="/" @click="closeNav">{{ t('header.nav.home') }}</router-link></li>
+          <li><router-link to="/cultural-exchange" @click="closeNav">{{ t('header.nav.culturalExchange') }}</router-link></li>
+          <li><router-link to="/cultural-visa" @click="closeNav">{{ t('header.nav.culturalVisa') }}</router-link></li>
+          <li><router-link to="/working-holiday" @click="closeNav">{{ t('header.nav.workingHoliday') }}</router-link></li>
+          <li><router-link to="/internship-visa" @click="closeNav">{{ t('header.nav.internshipVisa') }}</router-link></li>
+          <li><router-link to="/about" @click="closeNav">{{ t('header.nav.about') }}</router-link></li>
+          <li><router-link to="/contact" @click="closeNav">{{ t('header.nav.contact') }}</router-link></li>
         </ul>
+        <div class="lang-switch">
+          <button class="lang-btn" :class="{ active: locale === 'en' }" @click="switchLang('en')">EN</button>
+          <button class="lang-btn" :class="{ active: locale === 'zh' }" @click="switchLang('zh')">{{ t('header.lang.zh') }}</button>
+        </div>
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
   name: 'Header',
+  setup() {
+    const { locale, t } = useI18n()
+    
+    const switchLang = (lang) => {
+      locale.value = lang
+    }
+    
+    return { t, locale, switchLang }
+  },
   data() {
     return {
       isNavOpen: false

@@ -4,15 +4,16 @@
       <div class="page-banner-bg" style="background-image: url('https://picsum.photos/id/180/1920/1080')"></div>
       <div class="page-banner-overlay"></div>
       <div class="page-banner-content">
-        <div class="tagline">VISA SERVICES</div>
-        <h2>国际青年实习培训签证</h2>
-        <p>为年轻专业人士设计的海外短期培训与职业发展方案</p>
+        <div class="tagline">{{ t('internshipVisa.banner.tagline') }}</div>
+        <h2>{{ t('internshipVisa.banner.title') }}</h2>
+        <p>{{ t('internshipVisa.banner.subtitle') }}</p>
       </div>
+      <div class="banner-curve"></div>
     </section>
 
     <section class="intro-section">
       <div class="intro-container">
-        <p>无论您是应届毕业生寻求海外实训机会，还是青年专业人士希望在英语国家积累职业经验，以下三类签证分别对应不同的培训场景与申请路径。请根据您的目标目的地与职业规划选择对应类别。</p>
+        <p>{{ t('internshipVisa.intro.desc') }}</p>
       </div>
     </section>
 
@@ -20,52 +21,52 @@
       <!-- 澳大利亚 -->
       <div class="country-row">
         <div class="country-image">
-          <img src="https://picsum.photos/id/36/800/600" alt="Australia Internship">
+          <img src="https://picsum.photos/id/36/800/600" :alt="t('internshipVisa.australia.title')">
         </div>
         <div class="country-content">
-          <span class="country-tag">AUSTRALIA</span>
-          <h3 class="visa-code">Subclass 407</h3>
-          <span class="visa-name">青年职业培训签证</span>
-          <p class="country-desc">专为希望在澳大利亚参加职场培训的青年专业人士设计，最长可达2年。核心是技能提升，而非就业或移民。</p>
+          <span class="country-tag">{{ t('internshipVisa.australia.country') }}</span>
+          <h3 class="visa-code">{{ t('internshipVisa.australia.visaCode') }}</h3>
+          <span class="visa-name">{{ t('internshipVisa.australia.title') }}</span>
+          <p class="country-desc">{{ t('internshipVisa.australia.desc') }}</p>
           
           <div class="info-section">
-            <span class="detail-label">谁适合申请</span>
+            <span class="detail-label">{{ t('internshipVisa.australia.who') }}</span>
             <ul>
-              <li>应届毕业生，希望通过海外培训提升职业技能</li>
-              <li>已有职业方向，但缺乏实务经验的青年专业人士</li>
-              <li>持有打工度假签、学生签或485毕业生工签，希望在澳延长停留并接受培训的人士</li>
+              <li>{{ t('internshipVisa.australia.who1') }}</li>
+              <li>{{ t('internshipVisa.australia.who2') }}</li>
+              <li>{{ t('internshipVisa.australia.who3') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">关键要求</span>
+            <span class="detail-label">{{ t('internshipVisa.australia.requirements') }}</span>
             <ul>
-              <li>获得澳大利亚临时活动担保人有效提名</li>
-              <li>年满18周岁 · 具备Functional English英语水平</li>
-              <li>满足健康、品行、保险要求</li>
-              <li>具有真实临时入境意图</li>
+              <li>{{ t('internshipVisa.australia.req1') }}</li>
+              <li>{{ t('internshipVisa.australia.req2') }}</li>
+              <li>{{ t('internshipVisa.australia.req3') }}</li>
+              <li>{{ t('internshipVisa.australia.req4') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">培训类型</span>
+            <span class="detail-label">{{ t('internshipVisa.australia.trainingTypes') }}</span>
             <ul>
-              <li>职业注册培训：为获取职业注册所需的职场经验</li>
-              <li>技能提升培训：在已有职业领域内提升专业能力</li>
-              <li>海外能力建设培训：针对海外学历持有人的结构化培训</li>
+              <li>{{ t('internshipVisa.australia.train1') }}</li>
+              <li>{{ t('internshipVisa.australia.train2') }}</li>
+              <li>{{ t('internshipVisa.australia.train3') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">费用与时长</span>
+            <span class="detail-label">{{ t('internshipVisa.australia.fees') }}</span>
             <ul>
-              <li>主申请人约 AUD 430 · 最长获批 2 年</li>
-              <li>费用及审理周期以官网实时公布为准</li>
+              <li>{{ t('internshipVisa.australia.fee1') }}</li>
+              <li>{{ t('internshipVisa.australia.fee2') }}</li>
             </ul>
           </div>
 
           <div class="important-note">
-            本签证为培训类签证，不属于工作签证、雇主担保或移民通道。
+            {{ t('internshipVisa.australia.note') }}
           </div>
         </div>
       </div>
@@ -73,47 +74,47 @@
       <!-- 新西兰 -->
       <div class="country-row reversed">
         <div class="country-image">
-          <img src="https://picsum.photos/id/119/800/600" alt="New Zealand Internship">
+          <img src="https://picsum.photos/id/119/800/600" :alt="t('internshipVisa.newZealand.title')">
         </div>
         <div class="country-content">
-          <span class="country-tag">NEW ZEALAND</span>
-          <h3 class="visa-code">Student and Trainee</h3>
-          <span class="visa-name">培训工作签证</span>
-          <p class="country-desc">用于在新西兰完成特定学业或培训要求中的实践工作，与课程或培训项目深度绑定，非通用开放式工签。</p>
+          <span class="country-tag">{{ t('internshipVisa.newZealand.country') }}</span>
+          <h3 class="visa-code">{{ t('internshipVisa.newZealand.visaCode') }}</h3>
+          <span class="visa-name">{{ t('internshipVisa.newZealand.title') }}</span>
+          <p class="country-desc">{{ t('internshipVisa.newZealand.desc') }}</p>
           
           <div class="info-section">
-            <span class="detail-label">谁适合申请</span>
+            <span class="detail-label">{{ t('internshipVisa.newZealand.who') }}</span>
             <ul>
-              <li>医学或牙科临床实习生</li>
-              <li>课程中包含强制性实践培训的学生</li>
-              <li>宗教培训活动人员</li>
-              <li>注册骑师学徒（年满16岁）</li>
+              <li>{{ t('internshipVisa.newZealand.who1') }}</li>
+              <li>{{ t('internshipVisa.newZealand.who2') }}</li>
+              <li>{{ t('internshipVisa.newZealand.who3') }}</li>
+              <li>{{ t('internshipVisa.newZealand.who4') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">关键要求</span>
+            <span class="detail-label">{{ t('internshipVisa.newZealand.requirements') }}</span>
             <ul>
-              <li>符合对应培训类别的具体要求</li>
-              <li>拥有充足资金或获得合法担保</li>
-              <li>满足健康与品行标准</li>
-              <li>中国大陆申请人需提供户口本及身份证</li>
+              <li>{{ t('internshipVisa.newZealand.req1') }}</li>
+              <li>{{ t('internshipVisa.newZealand.req2') }}</li>
+              <li>{{ t('internshipVisa.newZealand.req3') }}</li>
+              <li>{{ t('internshipVisa.newZealand.req4') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">费用与审理</span>
+            <span class="detail-label">{{ t('internshipVisa.newZealand.fees') }}</span>
             <ul>
-              <li>申请费自 NZD 1,455 起 · 约 80% 申请在 10 周内完成</li>
+              <li>{{ t('internshipVisa.newZealand.fee1') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">停留期限</span>
+            <span class="detail-label">{{ t('internshipVisa.newZealand.duration') }}</span>
             <ul>
-              <li>医学/牙科实训、课程实践培训：最长 6 个月</li>
-              <li>宗教培训：最长 12 个月，可每年续签</li>
-              <li>骑师学徒：最长 4 年</li>
+              <li>{{ t('internshipVisa.newZealand.dur1') }}</li>
+              <li>{{ t('internshipVisa.newZealand.dur2') }}</li>
+              <li>{{ t('internshipVisa.newZealand.dur3') }}</li>
             </ul>
           </div>
         </div>
@@ -122,47 +123,47 @@
       <!-- 爱尔兰 -->
       <div class="country-row">
         <div class="country-image">
-          <img src="https://picsum.photos/id/28/800/600" alt="Ireland Internship">
+          <img src="https://picsum.photos/id/28/800/600" :alt="t('internshipVisa.ireland.title')">
         </div>
         <div class="country-content">
-          <span class="country-tag">IRELAND</span>
-          <h3 class="visa-code">Atypical Working Scheme</h3>
-          <span class="visa-name">非典型工作许可</span>
-          <p class="country-desc">为非欧洲经济区青年专业人士赴爱尔兰从事短期、专业、非典型工作提供的合法许可，覆盖通常少于90天且不适用普通就业许可体系的工作场景。</p>
+          <span class="country-tag">{{ t('internshipVisa.ireland.country') }}</span>
+          <h3 class="visa-code">{{ t('internshipVisa.ireland.visaCode') }}</h3>
+          <span class="visa-name">{{ t('internshipVisa.ireland.title') }}</span>
+          <p class="country-desc">{{ t('internshipVisa.ireland.desc') }}</p>
           
           <div class="info-section">
-            <span class="detail-label">谁适合申请</span>
+            <span class="detail-label">{{ t('internshipVisa.ireland.who') }}</span>
             <ul>
-              <li>短期赴爱从事专业工作的青年专业人士（通常少于90天）</li>
-              <li>代理医生 · NMBI注册护士</li>
-              <li>课程中带薪实习为结业必要条件的学生</li>
+              <li>{{ t('internshipVisa.ireland.who1') }}</li>
+              <li>{{ t('internshipVisa.ireland.who2') }}</li>
+              <li>{{ t('internshipVisa.ireland.who3') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">许可期限</span>
+            <span class="detail-label">{{ t('internshipVisa.ireland.duration') }}</span>
             <ul>
-              <li>标准场景：最长 90 天（可在6个月内间断使用）</li>
-              <li>特定医生/护士：最长 6 个月</li>
-              <li>课程必需带薪实习：最长 12 个月</li>
+              <li>{{ t('internshipVisa.ireland.dur1') }}</li>
+              <li>{{ t('internshipVisa.ireland.dur2') }}</li>
+              <li>{{ t('internshipVisa.ireland.dur3') }}</li>
             </ul>
           </div>
 
           <div class="info-section">
-            <span class="detail-label">费用与审理</span>
+            <span class="detail-label">{{ t('internshipVisa.ireland.fees') }}</span>
             <ul>
-              <li>处理费 EUR 250，通常不予退还</li>
-              <li>建议至少预留 20 个工作日审批</li>
-              <li>如需入境签证，签证时间另计</li>
+              <li>{{ t('internshipVisa.ireland.fee1') }}</li>
+              <li>{{ t('internshipVisa.ireland.fee2') }}</li>
+              <li>{{ t('internshipVisa.ireland.fee3') }}</li>
             </ul>
           </div>
 
           <div class="important-note">
             <ul>
-              <li>申请须在爱尔兰境外提交</li>
-              <li>AWS不计入Stamp 4长期居留资格</li>
-              <li>不可作为过渡性许可使用</li>
-              <li>如需入境签证，先获AWS批准再申请签证</li>
+              <li>{{ t('internshipVisa.ireland.note1') }}</li>
+              <li>{{ t('internshipVisa.ireland.note2') }}</li>
+              <li>{{ t('internshipVisa.ireland.note3') }}</li>
+              <li>{{ t('internshipVisa.ireland.note4') }}</li>
             </ul>
           </div>
         </div>
@@ -171,14 +172,14 @@
 
     <section class="footer-section">
       <div class="footer-container">
-        <p class="important-tip">以上信息仅供参考。具体申请条件、费用及审理周期均以各目的地国家移民主管部门官方网站实时公布为准。建议在正式递交申请前仔细阅读官方指南，并视个人情况咨询专业移民法律意见。</p>
+        <p class="important-tip">{{ t('internshipVisa.footer.tip') }}</p>
         
         <div class="official-links">
-          <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407" target="_blank">澳大利亚</a>
+          <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/training-407" target="_blank">{{ t('internshipVisa.footer.australia') }}</a>
           <span class="divider">·</span>
-          <a href="https://www.immigration.govt.nz/visas/student-and-trainee-work-visa/" target="_blank">新西兰</a>
+          <a href="https://www.immigration.govt.nz/visas/student-and-trainee-work-visa/" target="_blank">{{ t('internshipVisa.footer.newZealand') }}</a>
           <span class="divider">·</span>
-          <a href="https://www.irishimmigration.ie/atypical-working-scheme/" target="_blank">爱尔兰</a>
+          <a href="https://www.irishimmigration.ie/atypical-working-scheme/" target="_blank">{{ t('internshipVisa.footer.ireland') }}</a>
         </div>
       </div>
     </section>
@@ -186,22 +187,29 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
-  name: 'InternshipVisa'
+  name: 'InternshipVisa',
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  }
 }
 </script>
 
 <style scoped>
 .internship-page {
-  padding-top: 80px;
+  padding-top: 88px;
 }
 
 .page-banner {
   position: relative;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .page-banner-bg {
@@ -220,7 +228,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 43, 91, 0.7);
+  background: linear-gradient(135deg, rgba(0, 26, 51, 0.88) 0%, rgba(0, 43, 91, 0.8) 100%);
 }
 
 .page-banner-content {
@@ -231,22 +239,38 @@ export default {
 }
 
 .tagline {
-  font-size: 12px;
-  letter-spacing: 0.3em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  letter-spacing: 8px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  opacity: 0.8;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .page-banner-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .page-banner-content p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.banner-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--bg-white);
+  border-radius: 50% 50% 0 0 / 40px 40px 0 0;
 }
 
 .intro-section {
@@ -317,7 +341,7 @@ export default {
 }
 
 .visa-code {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans SC', 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--text-primary);
