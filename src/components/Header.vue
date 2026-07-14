@@ -27,6 +27,9 @@
           <button class="lang-btn" :class="{ active: locale === 'en' }" @click="switchLang('en')">EN</button>
           <button class="lang-btn" :class="{ active: locale === 'zh' }" @click="switchLang('zh')">{{ t('header.lang.zh') }}</button>
         </div>
+        <button class="mobile-lang-btn" @click="toggleLang">
+          {{ locale === 'en' ? '中文' : 'EN' }}
+        </button>
       </nav>
     </div>
   </header>
@@ -44,7 +47,11 @@ export default {
       locale.value = lang
     }
     
-    return { t, locale, switchLang }
+    const toggleLang = () => {
+      locale.value = locale.value === 'en' ? 'zh' : 'en'
+    }
+    
+    return { t, locale, switchLang, toggleLang }
   },
   data() {
     return {

@@ -212,6 +212,23 @@ nav {
     color: var(--text-secondary);
 }
 
+.mobile-lang-btn {
+    display: none;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.mobile-lang-btn:hover {
+    background: var(--primary-blue-dark);
+}
+
 /* Mobile Navigation */
 .nav-toggle {
     display: none;
@@ -1083,13 +1100,10 @@ footer::before {
         display: none;
     }
 
-    .nav-links.active + .lang-switch {
+    .mobile-lang-btn {
         display: flex;
-        position: fixed;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;
+        position: relative;
+        z-index: 1001;
     }
     
     .hero-content h2 {
