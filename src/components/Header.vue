@@ -9,11 +9,6 @@
             <span>{{ t('header.slogan') }}</span>
           </div>
         </router-link>
-        <div class="nav-toggle" id="navToggle" @click="toggleNav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <ul class="nav-links" id="navLinks" :class="{ active: isNavOpen }">
           <li><router-link to="/" @click="closeNav">{{ t('header.nav.home') }}</router-link></li>
           <li><router-link to="/cultural-exchange" @click="closeNav">{{ t('header.nav.culturalExchange') }}</router-link></li>
@@ -27,9 +22,14 @@
           <button class="lang-btn" :class="{ active: locale === 'en' }" @click="switchLang('en')">EN</button>
           <button class="lang-btn" :class="{ active: locale === 'zh' }" @click="switchLang('zh')">{{ t('header.lang.zh') }}</button>
         </div>
-        <button class="mobile-lang-btn" @click="toggleLang">
-          {{ locale === 'en' ? '中文' : 'EN' }}
-        </button>
+        <div class="nav-actions">
+          <button class="lang-toggle" @click="toggleLang">{{ locale === 'en' ? '中' : 'EN' }}</button>
+          <div class="nav-toggle" id="navToggle" @click="toggleNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -48,7 +48,7 @@ export default {
     }
     
     const toggleLang = () => {
-      locale.value = locale.value === 'en' ? 'zh' : 'en'
+      locale.value = locale.value === 'zh' ? 'en' : 'zh'
     }
     
     return { t, locale, switchLang, toggleLang }

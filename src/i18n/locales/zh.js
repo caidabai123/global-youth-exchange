@@ -4,10 +4,10 @@ export default {
     slogan: '连接全球青年',
     nav: {
       home: '首页',
-      culturalExchange: '国际文化交流项目',
-      culturalVisa: '国际青年文化交流签证',
-      workingHoliday: '打工度假签证',
-      internshipVisa: '国际青年实习培训签证',
+      culturalExchange: '国际文化交流',
+      culturalVisa: '国际青年文化交流',
+      workingHoliday: '打工度假',
+      internshipVisa: '国际青年实习培训',
       about: '关于我们',
       contact: '联系我们'
     },
